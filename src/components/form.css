@@ -1,0 +1,207 @@
+.sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.id span{
+   padding-bottom: 1rem;
+   color: white;
+   font-weight: 600;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  min-height: 490px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+}
+
+.container_read {
+  position: relative;
+  width: 400px;
+  min-height: 510px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+h2 {
+  margin-top: -1.5rem;
+  margin-right: -0.5rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.icn{
+  width: 40px;
+}
+
+.inputbox {
+  position: relative;
+  margin: 15px 0;
+  width: 340px;
+  padding: 10px 40px 0 0;
+  border-bottom: 2px solid #fff;
+}
+
+
+.box {
+  position: relative;
+  margin: 9px 0;
+  width: 340px;
+  padding: 10px 40px 0 0;
+  border-bottom: 2px solid #fff;
+}
+.first{
+  margin-top: 3rem;
+}
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translate(-50%);
+  color: #fff;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: .5s;
+}
+
+
+input:not(:placeholder-shown)~label {
+  top: -10px !important;
+}
+
+input:focus~label,
+input:valid~label{
+  top: -10px;
+}
+
+.head{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1rem;
+}
+
+.head .icon{
+  position: absolute;
+  top: .6rem;
+  right: .6rem;
+}
+
+.id span{
+  margin-bottom: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background-color: transparent ;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0 35px 0 5px;
+  color: #fff !important;
+}
+
+.last{
+  margin-bottom: 1rem;
+}
+.inputbox ion-icon {
+  position: absolute;
+  right: 8px;
+  color: #fff;
+  font-size: 1.2rem;
+  top: 20px;
+}
+
+.btn {
+  width: 100%;
+  margin: 1rem 0;
+  height: 40px;
+  border-radius: 40px;
+  background: rgba(250, 249, 249, 0.5);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.button {
+  width: 100%;
+  margin-bottom: .6rem;
+  height: 40px;
+  border-radius: 40px;
+  background: rgba(250, 249, 249, 0.5);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.edt{
+  margin-top: 2rem;
+}
+button :hover {
+  background-color: rgba(126, 125, 125, 0.9) !important;
+}
+
+.error span {
+  padding-top: 1rem;
+  color: rgba(255, 0, 0, 0.89) !important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  background-color: transparent;
+}
+
+
+@media screen and (max-width: 600px) {
+  .container,.container_read {
+    width: 350px;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .inputbox {
+    width: 280px;
+  }
+}
